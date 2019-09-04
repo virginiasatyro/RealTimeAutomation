@@ -3,7 +3,7 @@
 //  EXEMPLO 2a - Programa demonstrativo para criação de threads usando POSIX Threads
 //  --------------------------------------------------------------------------------
 //
-//  Versão 1.0 - 26/02/2010 - Prof. Luiz T. S. Mendes
+//  Virgínia Sátyro - Setembro 2019
 //
 //	NOTA: Este programa é funcionalmente equivalente ao programa "Exemplo 1 -
 //  Criação de Threads" contido no Cap. 2 do livro "Programação Multithreaded
@@ -29,6 +29,7 @@
 //  3. Selecione Project -> Properties -> Configuration Properties -> Linker -> Input
 //     e declare a biblioteca "pthreadVC2.lib" em "Additional Dependencies".
 //
+//  Baseado em: Versão 1.0 - 26/02/2010 - Prof. Luiz T. S. Mendes
 
 #include <windows.h>
 #include <stdio.h>
@@ -52,7 +53,7 @@ int main()
 	int status;
 	
 	// Particularidade do Windows - Define o título da janela
-	SetConsoleTitle("Exemplo 1 - Criando threads via Pthreads");
+	SetConsoleTitle("Criando threads via Pthreads");
 
 	// Loop de criacao das threads
     for (i=0; i<3; ++i) {	// cria 3 threads	
